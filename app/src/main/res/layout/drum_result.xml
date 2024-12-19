@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textViewCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textSize="18sp"
+        android:scaleType="center"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imageViewCustom"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image_desc"
+        android:visibility="visible"
+        android:scaleType="fitXY" />
+
+</merge>
