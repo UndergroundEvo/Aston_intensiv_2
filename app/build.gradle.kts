@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "ru.aston.polechudes"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "ru.aston.polechudes"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -37,6 +37,8 @@ android {
 
 dependencies {
 
+    //annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
+    implementation (libs.glide)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
