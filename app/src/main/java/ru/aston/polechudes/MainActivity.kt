@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startDrum() {
-        val randomSections = Random.nextInt(1, DrumColors.colors.size + 1)
+        val randomSections = Random.nextInt(0, DrumColors.colors.size-1)
         Log.d("startDrum","randomSections: $randomSections")
         drumView.spinTo(randomSections)
     }

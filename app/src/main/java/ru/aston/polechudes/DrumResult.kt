@@ -10,6 +10,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 
+const val URL_IMAGE = "https://loremflickr.com/320/240"
+
 class DrumResult @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
@@ -34,14 +36,14 @@ class DrumResult @JvmOverloads constructor(
         if (isEven) {
             textView.visibility = View.VISIBLE
             imageView.visibility = View.GONE
-            textView.text = "Selected Color"
+            textView.text = context.getString(R.string.text_result)
             textView.setTextColor(color)
         } else {
             textView.visibility = View.GONE
             imageView.visibility = View.VISIBLE
             Glide.with(context)
-                .load("https://loremflickr.com/320/240")
-                .placeholder(R.drawable.ic_launcher_foreground)
+                .load(URL_IMAGE)
+                .placeholder(R.drawable.cat_placeholder)
                 .into(imageView)
         }
         invalidate()

@@ -57,7 +57,11 @@ class Baraban @JvmOverloads constructor(
             val finalRotation = (targetRotation % 360)/(360f / sectionCount)
             val finalIndex = sectionCount - finalRotation
             Log.d("doOnEnd","finalRotation: $finalRotation sectionsToSpin: $sectionsToSpin")
-            onSpinCompleteListener?.invoke(DrumColors.colors[finalIndex.toInt()])
+            if ((finalIndex % 7).toInt() == 0){
+                onSpinCompleteListener?.invoke(DrumColors.colors[0])
+            }else{
+                onSpinCompleteListener?.invoke(DrumColors.colors[finalIndex.toInt()])
+            }
         }
 
         animator.start()
