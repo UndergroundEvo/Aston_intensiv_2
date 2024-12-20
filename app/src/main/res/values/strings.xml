@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PoleChudes</string>
+    <string name="start">Start</string>
+    <string name="reset_button_desc">Reset text/image</string>
+    <string name="image_desc">Result image</string>
+    <string name="text_result">Win!!!</string>
 </resources>

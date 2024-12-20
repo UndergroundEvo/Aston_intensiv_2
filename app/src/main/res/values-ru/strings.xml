@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Почти поле чудес</string>
+    <string name="start">Крутить барабан!</string>
+    <string name="reset_button_desc">Сбросить картинку/текст</string>
+    <string name="image_desc">Выпавшая картинка</string>
+    <string name="text_result">Откройте букву!!</string>
+</resources>
